@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ## Setup Environment - Shell/Terminal
 ```
 mkdir dashboard-ecommerce
-cd dashboard-ecommerce
+cd dashboard-ecommerce\dashboard
 pipenv install
 pipenv shell
 pip install -r requirements.txt
