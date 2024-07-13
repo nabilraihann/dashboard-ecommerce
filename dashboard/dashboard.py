@@ -92,7 +92,7 @@ def create_weight_category_df(df):
     return weight_category_df
 
 def create_map_df(df):
-    map_df = all_df.groupby(by='customer_city').agg({
+    map_df = df.groupby(by='customer_city').agg({
     'geolocation_lng': 'max',
     'geolocation_lat': 'max',
     'order_id': 'count',
