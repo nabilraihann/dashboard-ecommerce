@@ -151,7 +151,7 @@ col1, col2, col3 = st.columns([2, 3, 2])
 
 with col1:
     total_orders = monthly_orders_df.order_count.sum()
-    st.metric("Total Orders", value=f"📦{total_orders}")
+    st.metric("Total Orders", value=f"📦{total_orders:,}")
 
 with col2:
     total_revenue = format_currency(monthly_orders_df.revenue.sum(), 'pt_BR')
